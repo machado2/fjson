@@ -18,6 +18,14 @@ public:
   virtual bool toBool() { return toInt() != 0; }
   virtual void push_back(JsonValue value) {}
   virtual bool hasValue(std::string name) { return false; }
+  virtual bool isNull() { return false; }
+  virtual bool isNumber() { return false; }
+  virtual bool isString() { return false; }
+  virtual bool isArray() { return false; }
+  virtual bool isObject() { return false; }
+  virtual bool isBool() { return false; }
+  bool isTrue() { return isBool() && toBool(); }
+  bool isFalse() { return isBool() && !toBool(); }
 };
 
 }

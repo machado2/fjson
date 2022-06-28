@@ -16,6 +16,7 @@ public:
     stream << (value ? "true" : "false");
   }
   bool toBool() { return value; }
+  virtual bool isBool() { return true; }
 };
 
 } // namespace fjson

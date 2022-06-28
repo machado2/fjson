@@ -18,6 +18,7 @@ public:
   virtual void serialize(std::ostringstream &stream);
   virtual size_t size();
   void push_back(JsonValue value);
+  virtual bool isArray() { return true; }
 };
 
 } // namespace fjson

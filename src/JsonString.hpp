@@ -14,6 +14,7 @@ public:
   JsonString(const char *value);
   JsonString(std::string &value);
   virtual void serialize(std::ostringstream &stream);
+  virtual bool isString() { return true; }
 };
 
 } // namespace fjson

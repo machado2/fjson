@@ -18,6 +18,7 @@ public:
   virtual void serialize(std::ostringstream &stream);
   virtual size_t size();
   virtual bool hasValue(std::string name);
+  virtual bool isObject() { return true; }
 };
 
 } // namespace fjson

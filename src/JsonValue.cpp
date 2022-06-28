@@ -71,4 +71,13 @@ void JsonValue::push_back(JsonValue value) {
 
 bool JsonValue::hasValue(string s) { return ptr->hasValue(s); }
 
+bool JsonValue::isNull() { return ptr->isNull(); }
+bool JsonValue::isNumber() { return ptr->isNumber(); }
+bool JsonValue::isString() { return ptr->isString(); }
+bool JsonValue::isArray() { return ptr->isArray(); }
+bool JsonValue::isObject() { return ptr->isObject(); }
+bool JsonValue::isBool() { return ptr->isBool(); }
+bool JsonValue::isTrue() { return ptr->isTrue(); }
+bool JsonValue::isFalse() { return ptr->isFalse(); }
+
 } // namespace fjson

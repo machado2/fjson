@@ -53,6 +53,14 @@ namespace fjson
     size_t size();
     void push_back(JsonValue value);
     bool hasValue(std::string name);
+    bool isNull();
+    bool isNumber();
+    bool isString();
+    bool isArray();
+    bool isObject();
+    bool isBool();
+    bool isTrue();
+    bool isFalse();
   };
 
 } // namespace fjson

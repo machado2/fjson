@@ -14,6 +14,7 @@ public:
   JsonNumber(double value) : value(value) {}
   virtual void serialize(std::ostringstream &stream) { stream << value; }
   virtual double toDouble() { return value; }
+  virtual bool isNumber() { return true; }
 };
 
 }
